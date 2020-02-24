@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style-type: none;
+}
+
+.br {
+    height: 0;
+    width: 90vw;
+    margin-left: 5vw;
+    border: 0.04vh solid rgba(0, 0, 0, 0.1);
+}
+
+.result-page-search-container {
+    display: block;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    height: 5vh;
+    padding-left: 24vw;
+    padding-right: 24vw;
+}
+
+.search-container {
+    display: block;
+    margin-top: 45vh;
+    height: 5vh;
+    padding-left: 24vw;
+    padding-right: 24vw;
+    /*border: 1px solid black;*/
+}
+
+.input-container {
+    display: inline-block;
+    height: 4.5vh;
+    width: 38vw;
+    float: left;
+    margin-left: 0.9vw;
+    /*border: 1px solid red;*/
+}
+
+.input-container input {
+    width: 100%;
+    height: 4.5vh;
+    padding-left: 1vw;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: .6rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.button-container {
+    display: inline-block;
+    height: 4.5vh;
+    width: 10vw;
+    float: right;
+    margin-right: 0.9vw;
+    /*border: 1px solid red;*/
+}
+
+.button-container div {
+    display: inline-block;
+    width: 100%;
+    height: 4.5vh;
+    line-height: 4.5vh;
+    text-align: center;
+    font-weight: 600;
+    border: 2px solid rgba(0,0,0,0.4);
+    border-radius: .2rem;
+}
+
+.button-container div:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.search-result-item {
+    /*border: 1px solid black;*/
+    width: 90vw;
+    height: 26vh;
+    margin-left: 5vw;
+    border-bottom: 0.04vh solid rgba(0, 0, 0, 0.4);
+}
+
+.search-result-item-con {
+    /*border: 1px solid red;*/
+    margin-top: 2vh;
+    height: 22vh;
+    width: 90vw;
+}
+
+.item-title {
+    float: left;
+    margin-left: 2vw;
+    height: 13vh;
+    width: 35vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    /*border: 1px solid blue;*/
+}
+
+.title-con a {
+    width: 35vw;
+    overflow: hidden; /* 溢出时不显示溢出的内容 */
+    text-overflow: ellipsis; /* 发生溢出时使用省略号代替 */
+    display: -webkit-box; /* chrome浏览器的私有属性。显示为box。 */
+    -webkit-box-orient: vertical; /* 垂直排列元素 */
+    -webkit-line-clamp: 2; /* 显示多少行 */
+    text-decoration: none;
+    color: rgb(10, 100, 150);
+}
+
+.shop-logo {
+    position: absolute;
+    width: 35vw;
+    height: 3vh;
+    margin-top: 9vh;
+    /*border: 1px solid blue;*/
+}
+
+.shop-logo span {
+    float: left;
+    height: 3vh;
+    line-height: 3vh;
+    margin-left: 1vw;
+    font-size: 0.8rem;
+    font-weight: 600;
+    /*color: rgba(0,0,0,0.5);*/
+}
+
+.search-result-item-con div {
+    display: inline-block;
+}
+
+.item-img {
+    float: left;
+    margin-top: 0.5vh;
+    margin-left: 8vw;
+    height: 21vh;
+    width: 21vh;
+}
+
+.item-img a img {
+
+    width: 100%;
+    height: 100%;
+}
+
+.shop-logo img {
+    float: left;
+    width: 3vh;
+    height: 3vh;
+}
+
+.item-price {
+    min-width: 10vw;
+    height: 4vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    text-align: center;
+    line-height: 4vh;
+    font-size: 1.2rem;
+    /*border: 1px solid red;*/
+    color: rgb(238, 0, 0);
+}
+
+.item-comment {
+    min-width: 10vw;
+    height: 4vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    text-align: right;
+    line-height: 4vh;
+    /*border: 1px solid red;*/
+    float: right;
+    margin-right: 5vw;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(10, 100, 150);
+}
+
+.discount {
+    min-width: 16vw;
+    height: 3vh;
+    line-height: 3vh;
+    margin-top: 4.5vh;
+    /*border: 1px solid red;*/
+    float: right;
+    margin-right: 5vw;
+    text-align: right;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(238, 0, 0);
+}
+
+.select-btn-container {
+    min-height: 4vh;
+    width: 100vw;
+    padding-left: 24vw;
+    padding-right: 24vw;
+    margin-bottom: 2vh;
+}
+
+.select-sort-container {
+    display: inline-block;
+    min-height: 3vh;
+    min-width: 12vw;
+    float: left;
+    margin-top: 0.5vh;
+    padding: 0;
+    border: none;
+}
+
+.select-checkbox-container {
+    display: inline-block;
+    min-height: 3vh;
+    min-width: 12vw;
+    float: left;
+    margin-left: 16vw;
+    margin-top: 0.5vh;
+    padding: 0;
+}
+
+.sort-btn {
+    display: inline;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    min-width: 4vw;
+    height: 3vh;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    line-height: 3vh;
+    font-size: .78rem;
+    font-weight: 600;
+    float: left;
+}
+
+.check-input {
+    display: inline;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    min-width: 4vw;
+    height: 3vh;
+    text-align: center;
+    line-height: 3vh;
+    font-size: .78rem;
+    font-weight: 600;
+    float: left;
+    /*border: 1px solid red;*/
+}
+
+.check-input input {
+    display: inline-block;
+    height: 2vh;
+    width: 2vh;
+    float: left;
+    margin-top: 0.6vh;
+}
+
+#normal-sort {
+    border-top-left-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+}
+
+#price-down-sort {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+}
+
+.sort-btn:hover {
+    cursor: pointer;
+}
+
+.sort-btn-selected {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.cover-img{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cover-img img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
+.app-logo{
+    display: inline-block;
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    left: 37.5vw;
+    top: 12vh;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.app-logo img{
+    width: 100%;
+    height: 100%;
+
+}
